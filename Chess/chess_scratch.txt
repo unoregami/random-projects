@@ -1,0 +1,59 @@
+0,0
+0,5
+= horizontal
+vice versa
+
+
+6,0
+7,0
+
+[[0,1,2,3,4],
+[0,1,2,3,4],
+[0,1,2,3,4],
+[0,1,2,3,4]]
+
+
+h4, a5, Rh3, Rh5, Ra6
+
+0,4
+1,4
+
+at least one '1'
+sum of difference >= 1 and <= 2
+binary = {11,10,01}
+
+B = 7,5
+to = 4,2
+
+rules for capturing:
+• check if its king, if so then no
+• For pawn, king, knight, dont check pathing
+	• Pawn - {file}x{to}
+	• King - Kx{to}
+	• Knight - Nx{to}	
+• For rook, bishop, queen, check pathing
+	• Rook - Rx{to}
+	• Bishop - Bx{to}
+	• Queen - Qx{to}
+
+lengths of possible input:
+• Pawn move: c4 (2) ✓
+• Pawn promotion: c8Q (3)
+• Kingside castling: O-O (3)
+• Rank move: Qd5 (3) ✓
+• Rank capture: Qxe7(4)
+• Pawn capture: bxc4 (4) ✓
+• Queenside castling: O-O-O (5)
+• Disambiguous move: Qd5d7 (5)
+• Disambiguous capture: Qd5xd7 (6)
+• En passant: exf5 e.p. (9)
+
+
+Nc3
+Nb6
+Nc6
+Ne2
+Ne4
+Nb8
+Ne2
+Nd2

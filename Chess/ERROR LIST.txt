@@ -1,0 +1,30 @@
+ERROR LIST
+
+001 - invalid 1 pawn move
+002 - invalid 2 pawn move
+003 - invalid left to right pathing
+004 - invalid right to left pathing
+005 - invalid up to down pathing
+006 - invalid down to up pathing
+007 - invalid chess notation
+008 - invalid chess piece symbol
+009m - invalid 1 king move, move
+009c - invalid 1 king move, capture
+010 - invalid top-left to bottom-right pathing
+011 - invalid top-right to bottom-left pathing
+012 - invalid bottom-left to top-right pathing
+013 - invalid bottom-right to top-left pathing
+014 - invalid knight movement
+016 - pawn does not exist in the fr coords OR pawn capture is not slanted
+017 - captured free cell
+018 - captured piece is a king
+019 - out of bounds
+019m - out of bounds, move
+019w - out of bounds, white
+019b - out of bounds, black
+019gtc - out of bounds, gridToCol
+020 - cannot locate piece
+021 - invalid chess piece
+022 - invalid move, cell occupied
+023 - invalid castling
+024 - mismatched rank pieces, ambiguous capture
