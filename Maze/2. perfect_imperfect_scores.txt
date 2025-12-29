@@ -1,0 +1,59 @@
+==================================================    
+PERFECT MAZES
+Dijkstra
+Easy:
+        Score: 1462
+        Total Time: 3.5824770998588065sec
+        Ave Time: 0.0007164954199717613
+Medium:
+        Score: 2185
+        Total Time: 52.16155579988481sec
+        Ave Time: 0.010432311159976962
+Hard:
+        Score: 1622
+        Total Time: 115.3972984998909sec
+        Ave Time: 0.02307945969997818
+
+A-star
+Easy:
+        Score: 3538
+        Total Time: 3.296205499991629sec
+        Ave Time: 0.0006592410999983258
+Medium:
+        Score: 2815
+        Total Time: 50.876695499966445sec
+        Ave Time: 0.010175339099993288
+Hard:
+        Score: 3378
+        Total Time: 108.99680789984268sec
+        Ave Time: 0.021799361579968535
+==================================================
+IMPERFECT MAZES
+Dijkstra
+Easy:
+        Score: 634
+        Total Time: 3.9520976999374398sec
+        Ave Time: 0.000790419539987488
+Medium:
+        Score: 377
+        Total Time: 66.3728617001143sec
+        Ave Time: 0.01327457234002286
+Hard:
+        Score: 437
+        Total Time: 135.70972850022736sec
+        Ave Time: 0.02714194570004547
+
+A-star
+Easy:
+        Score: 4366
+        Total Time: 2.9896832999766048sec
+        Ave Time: 0.000597936659995321
+Medium:
+        Score: 4623
+        Total Time: 47.37272330012274sec
+        Ave Time: 0.009474544660024549
+Hard:
+        Score: 4563
+        Total Time: 102.11589759977869sec
+        Ave Time: 0.020423179519955738
+==================================================

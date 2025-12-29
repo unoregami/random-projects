@@ -1,0 +1,160 @@
+10
+A-Star: 0.0008
+Dijkstra: 0.0006
+20
+A-Star: 0.0016
+Dijkstra: 0.0012
+30
+A-Star: 0.0021
+Dijkstra: 0.0027
+40
+A-Star: 0.0159
+Dijkstra: 0.0153
+50
+A-Star: 0.0075
+Dijkstra: 0.0077
+60
+A-Star: 0.0101
+Dijkstra: 0.0119
+70
+A-Star: 0.0478
+Dijkstra: 0.0520
+80
+A-Star: 0.0217
+Dijkstra: 0.0202
+90
+A-Star: 0.0899
+Dijkstra: 0.0899
+100
+A-Star: 0.1064
+Dijkstra: 0.1240
+110
+A-Star: 0.0722
+Dijkstra: 0.0920
+120
+A-Star: 0.2815
+Dijkstra: 0.2745
+130
+A-Star: 0.0962
+Dijkstra: 0.1054
+140
+A-Star: 0.5558
+Dijkstra: 0.5482
+150
+A-Star: 1.5803
+Dijkstra: 1.7434
+160
+A-Star: 0.9513
+Dijkstra: 0.8807
+170
+A-Star: 0.9086
+Dijkstra: 0.9278
+180
+A-Star: 0.2756
+Dijkstra: 0.3002
+190
+A-Star: 1.0431
+Dijkstra: 1.1983
+200
+A-Star: 2.4466
+Dijkstra: 2.4250
+210
+A-Star: 3.6599
+Dijkstra: 3.8491
+220
+A-Star: 5.0953
+Dijkstra: 5.3874
+230
+A-Star: 3.0351
+Dijkstra: 3.1294
+240
+A-Star: 1.3280
+Dijkstra: 1.6490
+250
+A-Star: 0.8745
+Dijkstra: 1.0356
+260
+A-Star: 6.0687
+Dijkstra: 4.9941
+270
+A-Star: 14.3510
+Dijkstra: 14.7949
+280
+A-Star: 8.2049
+Dijkstra: 7.5961
+290
+A-Star: 1.9308
+Dijkstra: 1.9680
+300
+A-Star: 6.7245
+Dijkstra: 6.9513
+310
+A-Star: 4.1461
+Dijkstra: 4.1211
+320
+A-Star: 5.9282
+Dijkstra: 6.0186
+330
+A-Star: 10.7499
+Dijkstra: 10.9514
+340
+A-Star: 18.7071
+Dijkstra: 19.6996
+350
+A-Star: 23.9579
+Dijkstra: 24.7982
+360
+A-Star: 22.3842
+Dijkstra: 22.8985
+370
+A-Star: 25.3915
+Dijkstra: 26.1848
+380
+A-Star: 9.4224
+Dijkstra: 9.8217
+390
+A-Star: 19.5601
+Dijkstra: 21.9599
+400
+A-Star: 36.5006
+Dijkstra: 38.4827
+410
+A-Star: 7.2797
+Dijkstra: 7.3419
+420
+A-Star: 53.5241
+Dijkstra: 70.5886
+430
+A-Star: 14.6222
+Dijkstra: 14.7736
+440
+A-Star: 37.2354
+Dijkstra: 38.4880
+450
+A-Star: 31.0428
+Dijkstra: 33.8265
+460
+A-Star: 14.0292
+Dijkstra: 13.0992
+470
+A-Star: 75.2920
+Dijkstra: 77.9853
+480
+A-Star: 23.5058
+Dijkstra: 24.3961
+490
+A-Star: 77.3980
+Dijkstra: 80.2816
+500
+A-Star: 7.5053
+Dijkstra: 7.9235
+==================================================
+A-star:
+        Score: 37
+        Total Time: 577.9704121000032
+        Ave Time: 11.559408242000064
+==================================================
+Dijkstra's:
+        Score: 13
+        Total Time: 613.8167252000057
+        Ave Time: 12.276334504000115

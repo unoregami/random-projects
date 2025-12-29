@@ -1,0 +1,15 @@
+Imperfect Mazes:
+Easy	= 5000
+Medium	= 5000
+Hard	= 5000
+
+Perfect Mazes:
+Easy	= 5000
+Medium	= 5000
+Hard	= 5000
+
+
+Dimensions:
+Easy 	= 10x10
+Medium	= 36x36
+Hard	= 50x50
