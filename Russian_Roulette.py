@@ -24,15 +24,9 @@ def insertBullet(valve):
         if valve[index] != 1:
             valve[index] = 1
             break
+    spinChamber(valve)
 
 def spinChamber(valve):
-    # Same concept with "loading"
-    print("Spinning...")
-    for i in range(random.randint(1,2)):
-        time.sleep(2)
-        print("...", end="\n")
-    print()
-    
     # Picks random number 1-6 for revolution of the chamber. Adjusts the bullets in the chamber accordingly.
     k = random.randint(1,6)
     for j in range(k):
@@ -42,36 +36,41 @@ def spinChamber(valve):
                 valve[0] = x[-1]
             valve[i+1] = x[i]
 
-valve = [0,0,0,0,0,0]
-spins, spinH = 3, 0
-bullet = 0
-history = []
+def russianRoulette(totalwin):
+    valve = [0,0,0,0,0,0]
+    spins, spinH = 3, 0
+    bullet = 0
+    history = []
 
-while True:
-    x = input("Play russian roulette? ").lower()
-    if x == "n" or x == "no":
-        break
+
     while True:
         if valve.count(0) == 1: # breaks loop if only 1 slot free in the chamber.
             print("congrats. now leave.")
             print("\nGAME HISTORY")
             for i in history: print(i)
-            exit()
+            return totalwin, True
         
         insertBullet(valve)
         if valve.count(1) == 1:
-            print(f'{valve.count(1)} bullet in chamber.') # boilerplate for bullet amount
+            print(f'{valve.count(1)} bullet in chamber.')   # boilerplate for bullet amount
         else:
             print(f'{valve.count(1)} bullets in chamber.')
         bullet += 1
         history.append(f'Bullet {bullet}: {valve}')
 
         while True:
-            x = input(f"Click or Spin again ({spins} left) ").lower()  # asks user to click or spin
+            x = input(f"Click or Spin again ({spins} left) ").lower()   # asks user to click or spin
             if x == "s" or x == "spin":
                 if spins > 0:   # checks if there are spins left
                     spins -= 1  # decrement spin
                     spinChamber(valve)
+                    # Same concept with "loading"
+                    print("Spinning...")
+                    time.sleep(2)
+                    for i in range(random.randint(0,2)):
+                        print("...", end="\n")
+                        time.sleep(2)
+                    print()
                     spinH += 1  # increment spin in history
                     history.append(f'Spin   {spinH}: {valve}')
                     continue
@@ -81,12 +80,14 @@ while True:
         
         # "loading"
         print("Clicking...")
+        time.sleep(2)
         for i in range(0, 3):
-            time.sleep(2)
             print('...',end='\n')
+            time.sleep(2)
 
         # if still alive
         if valve[0] != 1:
+            totalwin += 1
             print('nice\n')
             time.sleep(2)
             continue
@@ -94,9 +95,18 @@ while True:
         print('you\'re dead.')
         print('\nGAME HISTORY')
         for i in history: print(i)
-        exit()
+        return totalwin, False
         
 
-# if n/no, here.
-print("Pussy.")
+totalwin = 0
+alive = True
+while alive:
+    x = input("Play russian roulette? ").lower()
+    if x == "n" or x == "no":
+        # if n/no, here.
+        print("Pussy.")
+        break
+    totalwin, alive = russianRoulette(totalwin)
+
+print(f"Win/s: {totalwin}")
 exit()
