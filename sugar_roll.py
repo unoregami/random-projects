@@ -167,6 +167,8 @@ for i in suit:
             case 12:
                 card = f"K{i}"
         deck.append(card)
+deckNum = int(input("Number of decks: "))
+deck = deck * deckNum
 print("Shuffling...")
 time.sleep(5)
 
